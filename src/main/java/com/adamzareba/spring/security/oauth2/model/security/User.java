@@ -2,13 +2,10 @@ package com.adamzareba.spring.security.oauth2.model.security;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.io.Serializable;
 import java.util.Collection;
-import java.util.HashSet;
-import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -21,7 +18,6 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.OrderBy;
 import javax.persistence.Table;
-import javax.persistence.Transient;
 import javax.persistence.UniqueConstraint;
 
 import lombok.EqualsAndHashCode;
@@ -59,13 +55,10 @@ public class User implements UserDetails, Serializable {
     private boolean enabled;
 
     @ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable(name = "USERS_ROLES", joinColumns = @JoinColumn(name = "USER_ID", referencedColumnName = "ID"), inverseJoinColumns = @JoinColumn(name = "ROLE_ID", referencedColumnName = "ID"))
+    @JoinTable(name = "USERS_AUTHORITIES", joinColumns = @JoinColumn(name = "USER_ID", referencedColumnName = "ID"), inverseJoinColumns = @JoinColumn(name = "AUTHORITY_ID", referencedColumnName = "ID"))
     @OrderBy
     @JsonIgnore
-    private Set<Role> roles = new HashSet<Role>();
-
-    @Transient
-    private Collection<? extends GrantedAuthority> authorities;
+    private Collection<Authority> authorities;
 
     @Override
     public boolean isAccountNonExpired() {
