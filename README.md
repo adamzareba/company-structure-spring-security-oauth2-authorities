@@ -1,6 +1,6 @@
 # Spring Boot + Spring Security + OAuth2
 
-Example Spring Boot + Hibernate + Spring Security + OAuth2 project for demonstration purposes of cache mechanism. 
+Example Spring Boot + Hibernate + Spring Security + OAuth2 project for demonstration purposes. 
 
 ## Getting started
 ### Prerequisites:
