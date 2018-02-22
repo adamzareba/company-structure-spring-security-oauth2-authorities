@@ -1,4 +1,4 @@
-package com.adamzareba.spring.security.oauth2.config.security.oauth2.encryption;
+package com.adamzareba.spring.security.oauth2.config.encryption;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

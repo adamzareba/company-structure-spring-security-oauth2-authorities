@@ -1,6 +1,6 @@
-package com.adamzareba.spring.security.oauth2.config.security.oauth2;
+package com.adamzareba.spring.security.oauth2.config.server;
 
-import com.adamzareba.spring.security.oauth2.config.security.oauth2.encryption.Encoders;
+import com.adamzareba.spring.security.oauth2.config.encryption.Encoders;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.security.SecurityProperties;

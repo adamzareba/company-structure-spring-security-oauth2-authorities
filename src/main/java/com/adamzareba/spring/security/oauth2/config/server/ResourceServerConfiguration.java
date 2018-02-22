@@ -1,4 +1,4 @@
-package com.adamzareba.spring.security.oauth2.config.security.oauth2;
+package com.adamzareba.spring.security.oauth2.config.server;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
