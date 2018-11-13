@@ -1,4 +1,4 @@
-# Spring Boot + Spring Security + OAuth2
+# [Spring Boot + Spring Security + OAuth2](https://dzone.com/articles/secure-spring-rest-with-spring-security-and-oauth2)
 
 Example Spring Boot + Hibernate + Spring Security + OAuth2 project for demonstration purposes. 
 
