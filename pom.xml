@@ -25,7 +25,7 @@
         <hibernate.version>5.2.12.Final</hibernate.version>
         <flywaydb.version>5.0.5</flywaydb.version>
         <jackson.version>2.9.5</jackson.version>
-        <lombok.version>1.16.20</lombok.version>
+        <lombok.version>1.18.6</lombok.version>
         <oauth2.version>2.2.1.RELEASE</oauth2.version>
     </properties>
 
@@ -95,6 +95,27 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.2.11</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-core</artifactId>
+            <version>2.2.11</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-impl</artifactId>
+            <version>2.2.11</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+            <version>1.1.1</version>
         </dependency>
 
         <dependency>
