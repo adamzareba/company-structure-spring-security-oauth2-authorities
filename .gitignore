@@ -2,3 +2,9 @@ target/
 .idea/
 *.class
 *.iml
+.settings
+.vscode
+.sts4-cache
+.project
+.factorypath
+.classpath
