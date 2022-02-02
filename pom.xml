@@ -17,7 +17,7 @@
     <properties>
         <java.version>1.8</java.version>
         <h2.version>1.4.196</h2.version>
-        <postgresql.version>42.1.4</postgresql.version>
+        <postgresql.version>42.2.25</postgresql.version>
 
         <spring.version>5.0.2.RELEASE</spring.version>
         <spring.hateoas.version>0.24.0.RELEASE</spring.hateoas.version>
